@@ -1,0 +1,9 @@
+:root {
+    --main-color: rgb(14, 90, 71);
+    --second-color: rgb(140, 175, 166);
+    --third-color: rgb(206, 228, 222);
+    --error-color: rgb(255, 111, 0);
+    --serif: 'Lora', serif;
+    --sans-serif: 'Open Sans', sans-serif;
+
+}
