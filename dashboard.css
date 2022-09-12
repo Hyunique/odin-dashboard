@@ -121,9 +121,106 @@ button {
     border-style: none;
     background-color: var(--main-color);
     color: var(--basis-color);
+    font-family: var(--sans-serif);
 }
 
 .board {
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: var(--neutral-color);
+    padding: 20px;
+}
+
+.projects h2 {
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: var(--basis-color);
+    margin: 20px;
+    border-radius: 10px;
+    border-left-style: solid;
+    border-left-color: var(--point-color);
+    border-left-width: 7px;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 40px 1fr 30px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cardIcons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.news,
+.trendingAcc {
+    background-color: var(--basis-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    grid-column: 2/3;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.maintanance {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.news :last-child {
+    border-bottom: 0;
+}
+
+.maintanance p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.trending {
+    grid-column: 2/3;
+}
+
+.trendingCard {
+    justify-content: space-evenly;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.accInfo h5 {
+    padding: 0;
+}
+
+.accInfo p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.accProfile {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
 }
