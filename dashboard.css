@@ -124,10 +124,17 @@ button {
     font-family: var(--sans-serif);
 }
 
+
+
+
+
+
+
 .board {
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
     background-color: var(--neutral-color);
     padding: 20px;
 }
@@ -145,6 +152,7 @@ button {
 .card {
     background-color: var(--basis-color);
     margin: 20px;
+    padding: 20px;
     border-radius: 10px;
     border-left-style: solid;
     border-left-color: var(--point-color);
@@ -166,7 +174,7 @@ button {
 }
 
 .news,
-.trendingAcc {
+.trendingCard {
     background-color: var(--basis-color);
     border-radius: 10px;
     padding: 10px 20px;
