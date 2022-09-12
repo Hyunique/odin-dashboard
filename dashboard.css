@@ -1,9 +1,129 @@
-:root {
-    --main-color: rgb(14, 90, 71);
-    --second-color: rgb(140, 175, 166);
-    --third-color: rgb(206, 228, 222);
-    --error-color: rgb(255, 111, 0);
-    --serif: 'Lora', serif;
-    --sans-serif: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+
+
+:root {
+    --main-color: #3A0CA3;
+    --point-color: #F72585;
+    --neutral-color: #eceff4;
+    --basis-color: white;
+    --sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--sans-serif);
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+}
+
+.sidebar {
+    background-color: var(--main-color);
+    color: var(--basis-color);
+    grid-column: 1/2;
+    grid-row: 1/4;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 26px;
+    padding: 14px;
+}
+
+
+ul {
+    margin: 38px 0 0 0;
+    padding: 2rem;
+    list-style-type: none;
+    line-height: 50px;
+}
+
+span {
+    padding: 0 10px 0 0;
+}
+
+
+
+
+
+
+
+.header {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px 40px;
+    align-content: center;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+input {
+    background-color: var(--neutral-color);
+    border-style: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.activityBar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 0;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.userwelcome p,
+.userwelcome h2 {
+    margin: 0;
+}
+
+.buttonWrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 340px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+button {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(--main-color);
+    color: var(--basis-color);
+}
+
+.board {
+    grid-column: 2/3;
+    background-color: var(--neutral-color);
 }
